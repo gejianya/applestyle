@@ -1,7 +1,8 @@
 import { Github, Dribbble, Props, Linkedin } from '@icons-pack/react-simple-icons'
 import { FC } from 'react'
-import Sspai from '../assets/sspai.svg'
 import Zhihu from '../assets/zhihu.svg'
+import Weibo from '../assets/Weibo.svg'
+import Bilibili from '../assets/Bilibili.svg'
 
 export type LinkType = {
     url: string,
@@ -17,57 +18,56 @@ export type LinkType = {
 
 
 export const links : readonly [LinkType, LinkType, LinkType, LinkType, LinkType] = [
-    {
-        url: 'https://github.com/MannyCooper',
-        icon: Github,
-        color: 'from-bg-[#24292f] to-bg-[#040d21]',
-        fill: "fill-[#181717]",
-        border: "border-[#181717]",
-        text:"text-[#181717]",
-        shadow: "shadow-true-gray-400",
-        id: "MannyCooper",
-        name: "GitHub"
-    },
-    {
-        url: 'https://sspai.com/u/mannycooper/updates',
-        icon: Sspai,
-        color: 'from-bg-[#d7161c] to-bg-[#fc281a]',
-        fill: "fill-[#da282a]",
-        border: "border-[#da282a]",
-        shadow: "shadow-red-300",
-        text:"text-[#da282a]",
-        name: "少数派"
-    },
-    {
-        // # banned
-        url: 'https://www.zhihu.com/people/an-zi-fan-62',
-        icon: Zhihu,
-        color: 'from-true-gray-400 to-true-gray-300 dark:(from-true-gray-600 to-true-gray-500)',
-        fill: "fill-[#0084FF]",
-        border: "border-[#0084FF]",
-        shadow: "shadow-blue-300",
-        text:"text-[#0084FF]",
-        id: "optional",
-        name: "知乎"
-    },
-    {
-        url: 'https://dribbble.com/anzifan',
-        icon: Dribbble,
-        fill: "fill-[#EA4C89]",
-        border: "border-[#EA4C89]",
-        shadow: "shadow-pink-300",
-        text:"text-[#EA4C89]",
-        color: 'from-bg-[#ea4c89] to-bg-[#ff589f]',
-        name: 'Dribbble'
-    },
-    {
-        url: 'http://linkedin.com/in/zifan-an/',
-        icon: Linkedin,
-        fill: "fill-[#0A66C2]",
-        border: "border-[#0A66C2]",
-        shadow: "shadow-blue-300",
-        text:"text-[#0A66C2]",
-        color: 'from-bg-[#0b66c2] to-bg-[#008bff]',
-        name: 'LinkedIn'
-    }
+  {
+      url: 'https://github.com/gejianya',
+      icon: Github,
+      color: 'from-bg-[#24292f] to-bg-[#040d21]',
+      fill: "fill-[#181717]",
+      border: "border-[#181717]",
+      text:"text-[#181717]",
+      shadow: "shadow-true-gray-400",
+      id: "gejianya",
+      name: "GitHub"
+  },
+  {
+      url: 'https://sspai.com/u/mannycooper/updates',
+      icon: Weibo,
+      color: 'from-bg-[#F8D65F] to-bg-[#FCEEBE]',
+      fill: "fill-[#F7D55E]",
+      border: "border-[#F7D55E]",
+      shadow: "shadow-yellow-300",
+      text:"text-[#F7D55E]",
+      name: "微博"
+  },
+  {
+      url: 'https://www.zhihu.com/people/xiao-ya-47-25',
+      icon: Zhihu,
+      color: 'from-bg-[#2B64F5] to-bg-[#4BA5F7]',
+      fill: "fill-[#0084FF]",
+      border: "border-[#0084FF]",
+      shadow: "shadow-blue-300",
+      text:"text-[#0084FF]",
+      id: "optional",
+      name: "知乎"
+  },
+  {
+      url: 'https://space.bilibili.com/8533657?spm_id_from=333.1007.0.0',
+      icon: Bilibili,
+      color: 'from-bg-[#EA4773] to-bg-[#ED749C]',
+      fill: "fill-[#E94973]",
+      border: "border-[#E94973]",
+      shadow: "shadow-pink-300",
+      text:"text-[#E94973]",
+      name: 'Bilibili'
+  },
+  {
+      url: 'https://www.linkedin.cn/in/%E5%BB%BA%E4%BA%9A-%E6%88%88-252742172',
+      icon: Linkedin,
+      fill: "fill-[#0A66C2]",
+      border: "border-[#0A66C2]",
+      shadow: "shadow-blue-300",
+      text:"text-[#0A66C2]",
+      color: 'from-bg-[#0b66c2] to-bg-[#008bff]',
+      name: 'LinkedIn'
+  }
 ]
