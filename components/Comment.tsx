@@ -34,9 +34,9 @@ const Comment = () => {
         return null
     }
 
-    const comments = [        
+    const comments = [
         {
-            name: 'Twikoo (国内访问，无需登录)',
+            name: 'Twikoo',
             component: <TwikooComponent />
         },
         {
