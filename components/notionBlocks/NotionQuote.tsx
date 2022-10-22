@@ -18,7 +18,7 @@ const NotionQuote = ({ value }: { value: any }) => {
     const { data, error } = useSWRImmutable(link ?? null, previewFetcher)
     if (!link || error) {
         return (
-            <div className="py-4 my-4 flex rounded-2xl 
+            <div className="py-4 my-4 flex rounded-2xl
             text-true-gray-500 justify-center md:w-9/10 mx-auto" dark="text-true-gray-400" before="content-❝ w-10 text-4xl font-bold leading-8">
                 <div className="leading-1">
                     <blockquote className="text-xl font-bold leading-7 text-true-gray-900" after="content-❞ text-true-gray-500 dark:text-true-gray-400" dark="text-true-gray-50">
@@ -34,7 +34,7 @@ const NotionQuote = ({ value }: { value: any }) => {
     } else {
         if (!data)
             return (
-                <div className="bg-light-300 my-4 flex rounded-2xl 
+                <div className="bg-light-300 my-4 flex rounded-2xl
             text-true-gray-500 justify-center flex-col" dark="bg-dark-300 text-true-gray-400" before="content-❝ w-10 text-4xl font-bold p-3 pb-0">
                     <div className="leading-1">
                         <blockquote className="pt-0 p-3 text-xl font-bold leading-7 text-true-gray-900 dark:text-true-gray-50" after="content-❞ text-true-gray-500 dark:text-true-gray-400">
@@ -55,7 +55,7 @@ const NotionQuote = ({ value }: { value: any }) => {
         const images = open_graph?.images ?? twitter_card?.images ?? oEmbed?.thumbnails ?? []
 
         return (
-            <div className="bg-light-300 my-4 flex rounded-2xl 
+            <div className="bg-light-300 my-4 flex rounded-2xl
             text-true-gray-500 justify-center flex-col" before="content-❝ w-10 text-4xl font-bold p-3 pb-0" dark="bg-dark-300 text-true-gray-400">
                 <div className="leading-1">
                     <blockquote className="pt-0 p-3 text-xl font-bold leading-7 text-true-gray-900 dark:text-true-gray-50" after="content-❞ text-true-gray-500 dark:text-true-gray-400">
