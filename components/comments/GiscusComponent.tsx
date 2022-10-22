@@ -8,7 +8,6 @@ type GiscusComponentProps = {
 const GiscusComponent: FC<GiscusComponentProps> = ({ theme }) => {
     return (
         <Giscus
-            src="https://giscus.app/client.js"
             repo="gejianya/blogcomments"
             repoId="R_kgDOIQVyUg"
             category="Comments"
