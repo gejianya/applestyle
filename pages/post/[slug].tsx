@@ -90,7 +90,7 @@ const PostPage: NextPage<{ page: Post; blocks: any[]; pagination: any; posts: an
                 })}
                 <div className={`flex flex-col mt-8 justify-between ${page.originalCover ? "md:flex-row-reverse md:items-center" : ""} gap-4 w-full`}>
                     {page.originalCover ?
-                        <a href="mailto:541297173@qq.com">
+                        <a href="mailto:gejianya@qq.com">
                             <div className="inline-block px-2 py-1 space-x-2 text-sm rounded-full whitespace-nowrap bg-true-gray-100 text-true-gray-800" dark="bg-true-gray-800 text-true-gray-100">
                                 <FontAwesomeIcon icon={faPalette} />
                                 <span>原创封面图，请勿盗用</span>
@@ -125,11 +125,11 @@ const PostPage: NextPage<{ page: Post; blocks: any[]; pagination: any; posts: an
                 </div>
                 {/* </div> */}
                 {/* <MediaContextProvider >
-                    <Media greaterThanOrEqual="sm" className="grid grid-cols-2 gap-4 md:grid-cols-2">                       
+                    <Media greaterThanOrEqual="sm" className="grid grid-cols-2 gap-4 md:grid-cols-2">
                         <WidgetMeMedium fix={true} />
                         <WidgetOverViewMedium posts={posts} fix={true} />
                     </Media>
-                    <Media lessThan="sm" className="grid grid-cols-2 gap-2">                        
+                    <Media lessThan="sm" className="grid grid-cols-2 gap-2">
                         <WidgetMeSmall />
                         <WidgetOverViewSmall posts={posts} />
                     </Media>

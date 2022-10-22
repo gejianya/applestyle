@@ -22,7 +22,7 @@ const FriendCard: FC<FriendType> = friend => {
             <div className="flex items-center justify-center transition duration-200 ease-in-out transform bg-white shadow-lg h-55 lg:h-58 rounded-3xl hover:scale-105" dark="bg-true-gray-900">
                 <div className="flex flex-col items-center justify-between h-full p-5">
                     <a href={friend.url} target="_blank" rel="noopener noreferrer">
-                        {status === Status.loading ? <div className="w-20 h-20 rounded-full bg-true-gray-200 animate-pulse" dark="bg-true-gray-600" /> : 
+                        {status === Status.loading ? <div className="w-20 h-20 rounded-full bg-true-gray-200 animate-pulse" dark="bg-true-gray-600" /> :
                         <div className="w-20 h-20 rounded-full bg-true-gray-200 relative overflow-hidden" dark="bg-true-gray-600"><Image layout='fill' objectFit="cover" src={friend.img} alt={friend.url} />
                         </div>}
                     </a>
@@ -55,7 +55,7 @@ const FriendCard: FC<FriendType> = friend => {
     }
 
     // const { title, description, favicon, open_graph, oEmbed, twitter_card } = data
-    // const images = open_graph?.images ?? twitter_card?.images ?? oEmbed?.thumbnails ?? []  
+    // const images = open_graph?.images ?? twitter_card?.images ?? oEmbed?.thumbnails ?? []
     // console.log(images)
     return (
 
@@ -69,12 +69,12 @@ const Friends: NextPage = () => {
     return (
         <ListLayout>
             <h1 className="mb-4 text-2xl font-bold md:text-3xl lg:mb-8">Friends👾</h1>
-            <p className="text-true-gray-400">我的朋友很少……(｡ì _ í｡)</p>
+            <p className="text-true-gray-400">四海之内皆宾朋(｡ì _ í｡)</p>
             <div className="grid grid-cols-2 gap-4 my-6 md:grid-cols-4 lg:grid-cols-5">
                 {friends.map((friend: FriendType) => <FriendCard key={friend.name} {...friend} />)}
             </div>
             {/* <hr /> */}
-            <p className="mt-12 text-center text-true-gray-400">👇扣1立即交友(不是)👇</p>
+            <p className="mt-12 text-center text-true-gray-400">👇下方评论区输入你网站名称、头像链接、网站链接 立即勾搭👇</p>
             <Comment />
         </ListLayout>
     )

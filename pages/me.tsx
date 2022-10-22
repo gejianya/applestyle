@@ -73,7 +73,7 @@ const Overview = () => {
                     Hey there 👋
                 </div>
                 <div className="text-lg font-semibold xs:text-2xl sm:text-3xl md:text-4xl whitespace-nowrap">
-                    {`I'm Zifan An `}
+                    {`I'm Jianya Ge `}
                     {/* <span className="text-sm">(a guy)</span> */}
                 </div>
                 {/* </div> */}
