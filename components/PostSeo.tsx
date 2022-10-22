@@ -13,7 +13,7 @@ type PostSeoProps = {
 }
 
 const PostSeo: FC<PostSeoProps> = ({
-    author = "异次元de机智君",
+    author = "gejianya",
     date,
     description,
     image,
@@ -29,7 +29,7 @@ const PostSeo: FC<PostSeoProps> = ({
     return (
         <>
             <NextSeo
-                title={`${title} | 异次元de机智君`}
+                title={`${title} | gejianya`}
                 description={description}
                 canonical={url}
                 openGraph={{

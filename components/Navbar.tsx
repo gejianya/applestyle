@@ -64,7 +64,7 @@ const Navbar: FC<{ toc: any }> = ({ toc }) => {
     <header className="sticky top-0 z-50 font-bold bg-white bg-opacity-70 backdrop-filter backdrop-blur-lg backdrop-saturate-200 border-b-[0.5px] border-b-true-gray-100" dark="bg-true-gray-900/70 border-b-true-gray-800" data-aos="fade-down" id="navbar">
       <div className="flex items-center justify-between px-6 py-3 mx-auto lg:px-11 lg:w-screen-lg whitespace-nowrap">
         <div className="z-50">
-        <Link href="/">异次元の机智君</Link>
+        <Link href="/">gejianya</Link>
         </div>
         <div className="flex items-center">
           {isPost ?

@@ -46,22 +46,22 @@ const Footer = () => {
                                         )}
                                     </div>
                                 </div>
-                                <p className="group">Design & Build with <span className="group-hover:text-red-400 transition-colors duration-500 ease-in-out">❤</span> by <a className="text-true-gray-600 hover:underline" href="https://github.com/MannyCooper/anzifan.com" target="_blank" rel="noopener noreferrer" dark="text-true-gray-400">MannyCooper</a></p>
+                                <p className="group">Design & Build with <span className="group-hover:text-red-400 transition-colors duration-500 ease-in-out">❤</span> by <a className="text-true-gray-600 hover:underline" href="https://github.com/gejianya/applestyle" target="_blank" rel="noopener noreferrer" dark="text-true-gray-400">AppleStyle</a></p>
                             </div>
                             <p className="flex flex-col items-end">
-                                <a className="hover:underline" href="https://anzifan-old.vercel.app" target="_blank" rel="noopener noreferrer">Old Blog</a>
+                                <a className="hover:underline" href="https://gejianya.github.io" target="_blank" rel="noopener noreferrer">Old Blog</a>
                             </p>
                         </div>
                         <div className="text-xs flex justify-between">
                             <div>
                                 <span>
-                                    {`Copyright © 2020-${thisYear} `}
+                                    {`Copyright © 2022-${thisYear} `}
                                     <Link href={"/me"}>
                                         <a className="text-true-gray-600 hover:underline" dark="text-true-gray-400">
-                                            安子璠
+                                            戈建亚
                                         </a>
                                     </Link>
-                                </span>                                
+                                </span>
                             </div>
                             <span><a className="text-true-gray-600 hover:underline" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer" dark="text-true-gray-400">CC BY-NC-SA 4.0</a></span>
                         </div>

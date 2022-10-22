@@ -43,7 +43,7 @@ const FrontMessage: FC<{ post: Post }> = ({ post }) => {
 
     const oldBlogMessage = generateCalloutValue("⚠️", "yellow_background", [
         { content: "This post is from the " },
-        { content: "old blog", link: { url: `https://anzifan-old.vercel.app/post/${post.slug}` } },
+        { content: "old blog", link: { url: `https://gejianya.github.io/post/${post.slug}` } },
         { content: ", so may not be presented at the best" }
     ]);
 
@@ -55,7 +55,7 @@ const FrontMessage: FC<{ post: Post }> = ({ post }) => {
 
     const sspaiMessage = generateCalloutValue(<Sspai className="fill-white h-5 w-5 bg-red-500 rounded-full p-1" />, "red_background", [
         { content : "本文首发于 "},
-        { content : "少数派", link: { url: post.sspai }},
+        { content : "jianya.shop", link: { url: post.sspai }},
         { content : " 🎉" }
     ])
 
@@ -64,14 +64,14 @@ const FrontMessage: FC<{ post: Post }> = ({ post }) => {
     return (
         <>
             {isOldBlog ?
-                <NotionCallout value={oldBlogMessage} /> : null                
+                <NotionCallout value={oldBlogMessage} /> : null
             }
             { updateDaysPassed > 365 ?
                 <NotionCallout value={outDatedMessage} /> : null
             }
             {
-                post.sspai !== "" ?  
-                <NotionCallout value={sspaiMessage} /> 
+                post.sspai !== "" ?
+                <NotionCallout value={sspaiMessage} />
                 : null
             }
             {
