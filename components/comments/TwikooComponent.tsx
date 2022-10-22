@@ -8,7 +8,7 @@ const TwikooComponent: FC = () => {
         cloudbase
         const twikoo = require('twikoo/dist/twikoo.min')
         twikoo.init({
-            envId: 'https://delete-my-project.vercel.app',
+            envId: 'https://jianya.store/',
             el: '#twikoo',
         })
     }
