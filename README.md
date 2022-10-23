@@ -1,4 +1,4 @@
-<samp><a href="https://jianya.shop" target="_blank" rel="noopener noreferrer">anzifan.com</a></samp>
+<samp><a href="https://jianya.shop" target="_blank" rel="noopener noreferrer">jianya.shop</a></samp>
 
 Personal blog powered by Notion official API + Next.JS + WindiCSS!
 
