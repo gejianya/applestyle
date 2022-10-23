@@ -15,7 +15,7 @@ module.exports = withPWA(
       return config
     },
     images: {
-      domains: ['static.anzifan.com', 'cdn.sspai.com', 'cdn.dribbble.com', 'image.freepik.com', 'avatars.githubusercontent.com', 'cdn.jsdelivr.net', 'image.cugxuan.cn', 'blog-static.mikuchan.top', 'amazonaws.com', 'img.zhheo.com', 'www.aohuiliu.fun', 'rxhsk.xicp.fun', 'www.fomal.cc', 'raw.githubusercontent.com', 's1.ax1x.com', 'imgse.com', 'github.com', 's3.us-west-2.amazonaws.com'],
+      domains: ['static.anzifan.com', 'cdn.sspai.com', 'cdn.dribbble.com', 'image.freepik.com', 'avatars.githubusercontent.com', 'cdn.jsdelivr.net', 'image.cugxuan.cn', 'blog-static.mikuchan.top', 'amazonaws.com', 'img.zhheo.com', 'www.aohuiliu.fun', 'rxhsk.xicp.fun', 'www.fomal.cc', 'raw.githubusercontent.com', 's1.ax1x.com', 'imgse.com', 'github.com', 's3.us-west-2.amazonaws.com', 's3.us-west-2.amazonaws.com/secure.notion-static.com', 'secure.notion-static.com'],
     },
     pwa: {
       dest: "public",
