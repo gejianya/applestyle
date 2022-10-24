@@ -27,8 +27,8 @@ const NotionImage = ({ value }: { value: any }) => {
     imageSrc = imageSrc.split('?')[0]
 
     return (
-        <figure className="mx-auto my-6 max-w-11/12 rounded-2xl" data-aos="fade-up" data-aos-duration="800" >
-            <div className={`${expire === null ? "flex justify-center" : ""} transition-all duration-800 ease-in-out rounded-2xl overflow-hidden relative w-full h-full`}
+        <figure className="mx-auto my-6 max-w-11/12 rounded-2xl" data-aos="fade-up" data-aos-duration="1200" >
+            <div className={`${expire === null ? "flex justify-center" : ""} transition-all duration-1200 ease-in-out rounded-2xl overflow-hidden relative w-full h-full`}
             // style={{
             //     opacity: loaded ? 1 : 0,
             //     transition: "opacity 1.1s cubic-bezier(0.4, 0, 0.25, 1) 0ms, background 400ms cubic-bezier(0.4, 0, 0.25, 1) 0ms",
@@ -41,9 +41,7 @@ const NotionImage = ({ value }: { value: any }) => {
                             placeholder="blur"
                             blurDataURL={value.blur}
                         // onLoad={handleLoad}
-            />
-                      : <Image className="rounded-2xl overflow-hidden" src={imageSrc} alt={imageCaption} width={width} height={height} />
-                      : <img className="rounded-2xl overflow-hidden" src={imageSrc} alt={imageCaption} width={width} height={height} />
+                        /> : <Image className="rounded-2xl overflow-hidden" src={imageSrc} alt={imageCaption} width={width} height={height} /> : <img className="rounded-2xl overflow-hidden" src={imageSrc} alt={imageCaption} width={width} height={height} />
                 ) : (
                     <img className="rounded-2xl overflow-hidden" src={imageSrc} alt={imageCaption} />
                 )}
