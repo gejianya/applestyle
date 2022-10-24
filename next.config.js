@@ -15,7 +15,7 @@ module.exports = withPWA(
       return config
     },
     images: {
-      domains: ['avatars.githubusercontent.com', 'cdn.jsdelivr.net', 'img.zhheo.com', 'rxhsk.xicp.fun', 'raw.githubusercontent.com', 'imgse.com'],
+      domains: ['avatars.githubusercontent.com', 'cdn.jsdelivr.net', 'img.zhheo.com', 'rxhsk.xicp.fun', 'raw.githubusercontent.com', 'imgse.com', 'static.com'],
     },
     pwa: {
       dest: "public",
