@@ -47,7 +47,8 @@ export const Colors: colorsType = {
         },
         bg: {
             normal: 'bg-yellow-50 dark:bg-yellow-900/40',
-            msg: 'bg-hex-ffcc00 dark:bg-hex-ffd60a',            gradient: 'from-hex-ffcc00 to-hex-34c759 dark:(from-hex-ffd60a to-hex-30d158)',
+            msg: 'bg-hex-ffcc00 dark:bg-hex-ffd60a',
+            gradient: 'from-hex-ffcc00 to-hex-34c759 dark:(from-hex-ffd60a to-hex-30d158)',
         },
     },
     'green': {
