@@ -8,7 +8,7 @@ export const friends: FriendType[] = [
   {
     url: 'https://blog.cugxuan.cn',
     name: '泫言',
-    img: 'https://image.cugxuan.cn/avater.jpg',
+    img: 'https://raw.githubusercontent.com/gejianya/img-picgo/master/avater.jpeg',
   },
   {
     url: 'https://blog.ccknbc.cc',
@@ -18,21 +18,21 @@ export const friends: FriendType[] = [
   {
     url: 'https://blog.zhheo.com/',
     name: '张洪Heo',
-    img: 'https://img.zhheo.com/i/2022/08/19/62ff32fa28da1.png',
+    img: 'https://raw.githubusercontent.com/gejianya/img-picgo/master/62ff32fa28da1.png',
   },
   {
     url: 'https://aohuiliu.fun',
     name: 'Aohui',
-    img: 'https://www.aohuiliu.fun/images/avatar.jpeg',
+    img: 'https://raw.githubusercontent.com/gejianya/img-picgo/master/avatar.jpeg',
   },
   {
     url: 'https://rxhsk.xicp.fun',
     name: 'Hello',
-    img: 'https://rxhsk.xicp.fun/img/avatar.png',
+    img: 'https://raw.githubusercontent.com/gejianya/img-picgo/master/avatar.png',
   },
   {
     url: 'https://www.fomal.cc',
     name: 'Fomalhaut🥝',
-    img: 'https://www.fomal.cc/assets/head.jpg',
+    img: 'https://raw.githubusercontent.com/gejianya/img-picgo/master/head.jpeg',
   },
 ]

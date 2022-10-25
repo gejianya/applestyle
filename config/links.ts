@@ -32,11 +32,11 @@ export const links : readonly [LinkType, LinkType, LinkType, LinkType, LinkType]
   {
       url: 'https://sspai.com/u/mannycooper/updates',
       icon: Weibo,
-      color: 'from-bg-[#F8D65F] to-bg-[#FCEEBE]',
-      fill: "fill-[#F7D55E]",
-      border: "border-[#FFCA03]",
+      color: 'from-bg-[#EB1D36] to-bg-[#FA9494]',
+      fill: "fill-[#EB1D36]",
+      border: "border-[#EB1D36]",
       shadow: "shadow-yellow-300",
-      text:"text-[#F7D55E]",
+      text:"text-[#EB1D36]",
       name: "微博"
   },
   {
