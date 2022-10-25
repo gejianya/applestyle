@@ -26,7 +26,7 @@ export const links : readonly [LinkType, LinkType, LinkType, LinkType, LinkType]
       border: "border-[#181717]",
       text:"text-[#181717]",
       shadow: "shadow-true-gray-400",
-      id: "Jianya Ge",
+      id: "戈建亚",
       name: "GitHub"
   },
   {
@@ -34,7 +34,7 @@ export const links : readonly [LinkType, LinkType, LinkType, LinkType, LinkType]
       icon: Weibo,
       color: 'from-bg-[#F8D65F] to-bg-[#FCEEBE]',
       fill: "fill-[#F7D55E]",
-      border: "border-[#F7D55E]",
+      border: "border-[#FFCA03]",
       shadow: "shadow-yellow-300",
       text:"text-[#F7D55E]",
       name: "微博"
