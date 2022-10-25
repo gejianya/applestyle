@@ -26,7 +26,7 @@ export const links : readonly [LinkType, LinkType, LinkType, LinkType, LinkType]
       border: "border-[#181717]",
       text:"text-[#181717]",
       shadow: "shadow-true-gray-400",
-      id: "戈建亚",
+      id: "Jianya Ge",
       name: "GitHub"
   },
   {
