@@ -54,7 +54,7 @@ export const links : readonly [LinkType, LinkType, LinkType, LinkType, LinkType]
       url: 'https://space.bilibili.com/8533657?spm_id_from=333.1007.0.0',
       icon: Bilibili,
       color: 'from-bg-[#EA4773] to-bg-[#ED749C]',
-      fill: "fill-[#E94973]",
+      fill: "fill-[#F94892]",
       border: "border-[#E94973]",
       shadow: "shadow-pink-300",
       text:"text-[#E94973]",
