@@ -423,4 +423,4 @@ const Me: NextPage<{ posts: Post[] }> = ({ posts }) => {
     )
 }
 
-export default me
+export default Shuoshuo
