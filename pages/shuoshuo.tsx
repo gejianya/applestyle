@@ -63,7 +63,6 @@ const Overview = () => {
     };
 
     return (
-        <div className="grid grid-cols-2 gap-3 select-none md:gap-6">
             <div data-aos="fade-up" data-aos-duration="800" className={`${style} justify-between`}>
                 <p className="text-xs font-semibold xs:text-lg md:text-xl">
                     {`I'm a`}
