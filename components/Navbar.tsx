@@ -19,13 +19,6 @@ import PostToc from './PostToc';
 
 const navigations = [
   {
-    name: 'Shuoshuo',
-    link: '/shuoshuo',
-    icon: <TagsIcon />,
-    color: Colors['pink'].text.normal,
-    width: 'group-hover:w-21.5',
-  },
-  {
     name: 'Tags',
     link: '/tags',
     icon: <TagsIcon />,
