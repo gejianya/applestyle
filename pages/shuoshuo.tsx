@@ -63,6 +63,26 @@ const Overview = () => {
     };
 
     return (
+        <div className="grid grid-cols-2 gap-3 select-none md:gap-6">
+            <div data-aos="fade-up" data-aos-duration="800" className={`${style} bg-gradient-to-br from-[#ffa0a8] to-[#fffcdc] text-white`}
+            // style={{ background: "linear-gradient(135deg, #ffa0a8, #fffcdc)" }}
+            // style={{ background:"linear-gradient(90deg, rgba(255,167,69,1) 0%, rgba(254,134,159,1) 25%, rgba(239,122,200,1) 50%, rgba(160,131,237,1) 75%, rgba(67,174,255,1) 100%)"}}
+            >
+                {/* <div className="flex flex-col justify-between"> */}
+                {/* </div> */}
+                {/* <img className="h-full rounded-full" src="/static/images/portrait.png" alt="portrait" /> */}
+            </div>
+            <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" className={`${style} row-span-2 text-white bg-gradient-to-br from-green-400 to-blue-500`}>
+                <p className="text-xs font-semibold xs:text-lg md:text-xl">
+                    Intersted in</p>
+                <div className="text-center">
+                    <p className="text-sm font-semibold xs:text-xl sm:text-2xl md:text-3xl">
+                        Web & Mobile Development, Machine Learning
+                    </p>
+
+                </div>
+                <p className="text-xs text-center sm:text-sm text-true-gray-100">... and any other interesting or challenging technology</p>
+            </div>
             <div data-aos="fade-up" data-aos-duration="800" className={`${style} justify-between`}>
                 <p className="text-xs font-semibold xs:text-lg md:text-xl">
                     {`I'm a`}
@@ -106,6 +126,59 @@ const Overview = () => {
                 </p>
                 <LocationMap />
             </div>
+            <div data-aos="fade-up" data-aos-duration="800" className={`${style} col-span-2 gap-3  relative !flex-row items-center`}>
+                <p className="z-10 text-sm font-semibold text-left xs:text-lg sm:text-2xl md:text-3xl lg:text-4xl whitespace-nowrap">
+                    Find me on 👉
+                </p>
+                {/* <div className="absolute bottom-0 left-0 z-0 w-full bg-indigo-200 h-5/7 sm:h-3/5"/> */}
+                <div className="flex items-center justify-center gap-0 my-4 text-white sm:gap-1 md:gap-1 lg:gap-2">
+                    {
+                        social.map((s: any) =>
+                            <a last-after="absolute content-. text-transparent  w-4 h-4 rounded-full bg-red-500 right-0 top-0" last-before="absolute content-. text-transparent  w-4 h-4 animate-ping  rounded-full bg-red-400 right-0 top-0" target="_blank" rel="noopener noreferrer" className={`relative shadow-inner translate-y-5 even:(-translate-y-5) -ml-3 sm:ml-0  rounded-full p-3 sm:p-4 md:p-5 lg:p-6  flex justify-center items-center transform transition ease-in-out duration-200 hover:scale-105 md:hover:scale-95 aspect-ratio h-full bg-gradient-to-tr text-white  shadow-lg-middle dark:shadow-none ${s.shadow} ${s.color} `} href={s.url} key={s.name}>
+                                <s.icon className={`h-3 w-3 xs:(h-4 w-4) sm:(w-5 h-5) lg:(w-6 h-6) fill-white`}></s.icon>
+                                {/* <p className={`hidden md:block whitespace-nowrap`}>{s.name}</p>                */}
+                            </a>
+                        )
+                    }
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="800" className={`bg-white rounded-3xl overflow-hidden min-h-25 sm:min-h-37 col-span-2 sm:col-span-1 flex flex-col relative justify-between`} dark="bg-true-gray-900">
+                <div className={`absolute transition duration-200  ease-in-out h-full w-full bg-true-gray-900 z-40 rounded-3xl text-white ${more ? "opacity-100" : "opacity-0"} overflow-auto scrollbar-hide justify-between flex flex-col`}>
+                    <p className={`p-4 xs:p-4.5 sm:p-6 md:p-8  text-sm font-semibold text-left xs:text-lg sm:text-2xl md:text-3xl lg:text-4xl z-50 line-clamp-1 text-transparent`}>Technical Skills</p>
+                    <div className="flex flex-col justify-end items-start w-full p-4 xs:p-4.5 sm:p-6 md:p-8 gap-3 lg: gap-4">
+                        {skills.map((skill: any, index: number) =>
+                            <div className="flex flex-wrap gap-1 lg:gap-3" key={index}>
+                                {
+                                    skill.map((s: any, i: number) =>
+                                        <div className="flex flex-row gap-1 text-xs xs:text-sm md:text-normal lg:text-lg place-items-center" key={s.name + i.toString()}>
+                                            <s.icon className={`w-3 h-3 lg:(w-5 h-5) p-1 rounded-full ${s.color}`} />
+                                            {s.name}
+                                        </div>
+                                    )}
+                                ...
+                            </div>
+                        )}
+                    </div>
+                </div>
+                <div className="flex flex-row items-center justify-between p-4 xs:p-4.5 sm:p-6 md:p-8">
+                    <p className={`text-2xl font-semibold text-left sm:text-2xl md:text-3xl lg:text-4xl z-10 z-50  line-clamp-1 ${more ? "text-white dark:text-black" : "text-black dark:text-white"}`}>Technical Skills</p>
+                    <div className={`h-full aspect-square grid place-items-center transition duration-500  ease-in-out z-50 hover:cursor-pointer transform ${more ? "rotate-45 bg-white text-black hover:bg-true-gray-200" : "rotate-0 bg-black text-white hover:bg-true-gray-500"} rounded-full`} onClick={handleMore} dark="bg-true-gray-900">
+                        <FontAwesomeIcon className="md:(transform scale-150)" icon={faPlus} />
+                    </div>
+                </div>
+                <div className="pb-4 xs:pb-4.5 sm:pb-6 lg:pb-8">
+                    {
+                        skills.map((s: any, i: number) =>
+                            <div className={`${i === 1 ? "my-1 md:my-1 lg:my-2" : ""}`} key={i}>
+                                <div className="w-[1560px] animate-scroll-md lg:(w-[2200px] animate-scroll-lg) flex justify-between">
+                                    {Array(20).fill(0).map((_, index) => s[index % s.length]).map((s, s_i) =>
+                                        <div className={`w-[78px] mx-[4px] h-[70px] rounded-xl lg:(w-[110px] mx-[5px] h-[100px] rounded-3xl) text-white grid place-items-center ${s.color} ${i === 1 ? "transform -translate-x-5 sm:-translate-x-10 lg:-translate-x-15" : ""}`} key={s.name + s_i.toString()}>
+                                            <s.icon className="w-9 h-9 lg:(w-12 h-12)"></s.icon>
+
+                                        </div>)
+                                    }
+                                </div>
+                            </div>
                         )
                     }
 
