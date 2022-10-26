@@ -69,6 +69,13 @@ const Overview = () => {
             // style={{ background:"linear-gradient(90deg, rgba(255,167,69,1) 0%, rgba(254,134,159,1) 25%, rgba(239,122,200,1) 50%, rgba(160,131,237,1) 75%, rgba(67,174,255,1) 100%)"}}
             >
                 {/* <div className="flex flex-col justify-between"> */}
+                <div className="text-xs font-semibold xs:text-lg md:text-xl">
+                    Hey there 👋
+                </div>
+                <div className="text-lg font-semibold xs:text-2xl sm:text-3xl md:text-4xl whitespace-nowrap">
+                    {`I'm Jianya Ge `}
+                    {/* <span className="text-sm">(a guy)</span> */}
+                </div>
                 {/* </div> */}
                 {/* <img className="h-full rounded-full" src="/static/images/portrait.png" alt="portrait" /> */}
             </div>
