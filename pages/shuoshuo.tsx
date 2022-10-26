@@ -3,7 +3,7 @@ import ContentLayout from "../components/layout/ContentLayout";
 import ListLayout from "../components/layout/ListLayout";
 import { getDatabase } from "../lib/notion";
 import { Post } from "../lib/types";
-import { me } from "../config/me";
+import { shuoshuo } from "../config/me";
 import { Colors } from "../lib/colors";
 import Image from "next/image"
 import { useEffect } from "react";
