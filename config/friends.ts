@@ -26,13 +26,13 @@ export const friends: FriendType[] = [
     img: 'https://raw.githubusercontent.com/gejianya/img-picgo/master/avatar.jpeg',
   },
   {
-    url: 'https://rxhsk.xicp.fun',
-    name: 'Hello',
-    img: 'https://raw.githubusercontent.com/gejianya/img-picgo/master/avatar.png',
-  },
-  {
     url: 'https://www.fomal.cc',
     name: 'Fomalhaut🥝',
     img: 'https://raw.githubusercontent.com/gejianya/img-picgo/master/head.jpeg',
+  },
+  {
+    url: 'https://cat.dorcandy.cn/',
+    name: '火喵博客·日记本',
+    img: 'https://raw.githubusercontent.com/gejianya/img-picgo/master/10.png',
   },
 ]

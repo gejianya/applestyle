@@ -19,14 +19,14 @@ export type LinkType = {
 
 export const links : readonly [LinkType, LinkType, LinkType, LinkType, LinkType] = [
   {
-      url: 'https://github.com/gejianya',
+      url: 'https://gejianya.notion.site/abcf8c12180246f2a440b2aec9cf9ad1',
       icon: Github,
       color: 'from-bg-[#24292f] to-bg-[#040d21]',
       fill: "fill-[#181717]",
       border: "border-[#181717]",
       text:"text-[#181717]",
       shadow: "shadow-true-gray-400",
-      id: "Jianya Ge",
+      id: "我的书库",
       name: "GitHub"
   },
   {
